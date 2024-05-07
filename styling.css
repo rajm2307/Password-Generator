@@ -1,0 +1,118 @@
+/* CSS for Password Generator */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.length {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.length label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+
+.length input[type="number"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.length input[type="number"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.6);
+}
+
+.sub-container {
+  /* display: flex;   */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#selectors .selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#resultEL {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  font-size: 24px;
+  color: #333;
+}
+
+#resultEL:hover {
+  transform: scale(1.1);
+}
+
+#generate {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#generate:hover {
+  background-color: #45a049;
+}
+
+.selector {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selector {
+  background-color: #f0f0f0;
+}
+
+.selector.upper:hover {
+  background-color: #e0e0e0;
+}
+
+/* Unique styling for checkboxes */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50;
+  /* outline: none; */
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+}
+
+/* Checkbox hover effect */
+input[type="checkbox"]:hover {
+  border-color: #45a049;
+}
